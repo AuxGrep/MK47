@@ -27,7 +27,7 @@ after you finish collecting the data in specific period of time ! noW its a time
 This will convert your captured data and extract all ESSID captured during your strolling.
 
 # CRACKING
-To crack all sniffed network, You need to run a crack script. Simply by
+To crack all sniffed networkS, You need to run a crack script. Simply by
 
 #
         sudo ./crack.sh
