@@ -17,8 +17,9 @@ def network_manager():
 	subprocess.run('sudo systemctl start NetworkManager.service', shell=True)
 	time.sleep(2)
 	subprocess.run('sudo systemctl start wpa_supplicant.service', shell=True)
-	os.system(f'hcxpcapngtool -o {hashcat_format_file} -E {network_list} {file_from_recon}')
-network_manager();
+	os.system(f'sudo hcxpcapngtool -o {hashcat_format_file} -E {network_list} {file_from_recon}')
+
+network_manager()
 
 with open(f'{network_list}', mode='r') as outputfile:
 	check = outputfile.read()
