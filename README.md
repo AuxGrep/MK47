@@ -11,8 +11,9 @@ Therefore Our Aim is to gather WiFi PMKID hashes, so we need a wireless network 
 
 Now wear a black hoody jacket like above pic then
 #
-    sudo python3 mk47-wifi-SNIFFER.py 
+    sudo python3 mk47-wifi-SNIFFER.py wlan1
 #
+Replace ``wlan1`` with your card interface 
 
 sleep your Pc then start strolling to your home streets, A script will capture each and everything because you will get a PMKID hashes of every network you cross.
 
