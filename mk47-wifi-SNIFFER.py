@@ -8,8 +8,7 @@ import urllib.request
 import subprocess
 import sys
 
-# enter your external wifi adapter interface without monitoring mode enabled eg: wlan1
-wifimonitor = input('syntx card interface: ')
+wifimonitor = str(sys.argv[1])
 
 # Now let's check if your pc is connected with internet
 def network_manager(web='https://google.com'):
@@ -41,6 +40,7 @@ def hcxdump():
 	print(f"Now run python3 hcx.py to convert dumped data from {hcxdump_file}")
 
 hcxdump();
+
 
 
 
